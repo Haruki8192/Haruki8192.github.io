@@ -1,271 +1,131 @@
-* {
-  box-sizing: border-box;
+@charset "utf-8";
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ul{
+list-style: none;
+}
+a{
+text-decoration: none;
+}
+img{
+vertical-align: bottom;
 }
 
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+/* 共通部分 */
+header{
+padding: 20px 0;
+}
+h1{
+font-size: 42px;
+text-align: center;
+font-family: 'Zen Kurenaido', sans-serif;
+}
+.g-nav{
+width: 100%;
+height: 50px;
+background-color: #7D6C46;
+margin-bottom: 100px;
+}
+.g-nav>ul{
+display: flex;
+width: 960px;
+margin: 0 auto;
+}
+.g-nav li{
+width: 20%;
+}
+.g-nav a{
+display: block;
+line-height: 50px;
+text-align: center;
+color: #FFF;
+border-right: 1px solid #FFF;
+}
+.g-nav li:first-of-type>a{
+border-left: 1px solid #FFF;
+}
+.g-nav a:hover{
+background-color: #808080;
+}
+.g-nav li.current>a{
+background-color: #808080;
 }
 
-a {
-  text-decoration: none;
+footer{
+width: 100%;
+height: 100px;
+background-color: #7D6C46;
+}
+footer>p{
+text-align: center;
+line-height: 100px;
+color: #FFF;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+/* トップページ部分 */
+main{
+width: 960px;
+margin: 0 auto 100px;
+}
+.main-visual{
+margin-bottom: 80px;
+}
+.main-copy{
+text-align: center;
+width: 600px;
+margin: 0 auto;
+}
+.main-copy>h2{
+margin-bottom: 20px;
+}
+.main-copy>p{
+line-height: 2.5;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+/* 季節ページ部分 */
+.wrapper{
+display: flex;
+margin-bottom: 100px;
+}
+.photo{
+margin-right: 40px;
+}
+.txt>h2{
+margin-bottom: 10px;
+}
+.txt>p{
+line-height: 1.8;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
+/* 春ページ部分 */
+.spring>.g-nav{
+background-color: #CB1B45;
 }
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
+.spring>footer{
+background-color: #CB1B45;
 }
-
-.btn-wrapper {
-  text-align: center;
+/* 夏ページ部分 */
+.summer>.g-nav{
+background-color: #2E5C6E;
 }
-
-.btn-wrapper p {
-  margin-bottom: 20px;
+.summer>footer{
+background-color: #2E5C6E;
 }
-
-.signup {
-  background-color: #239b76;
+/* 秋ページ部分 */
+.fall>.g-nav{
+background-color: #F05E1C;
 }
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
+.fall>footer{
+background-color: #F05E1C;
 }
-
-.twitter {
-  background-color: #55acee;
+/* 冬ページ部分 */
+.winter>.g-nav{
+background-color: #211E55;
 }
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
+.winter>footer{
+background-color: #211E55;
 }
