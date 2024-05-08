@@ -1,18 +1,32 @@
 header {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  background-color:;
-  align-items: center;
-  position:fixed
+    background-color: #333;
+    color:
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
- 
-.title {
-  margin-right: auto;
+
+h1 {
+    margin: 0;
 }
- 
-.menu-item {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
