@@ -5,9 +5,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+}
 
-.img{
+h1{.img{
   max-width:300px;
     height: auto;
 }
