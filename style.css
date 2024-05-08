@@ -8,10 +8,8 @@ header {
     
 }
 h1{
-  font-size:100%;
-  color: #ff0000;
-  background-color: #ffffff;
- margin:0
+  max-width:300px;
+    height: auto;
 }
 
 nav ul {
