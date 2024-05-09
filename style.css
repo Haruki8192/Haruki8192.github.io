@@ -27,14 +27,12 @@ nav ul li {
 nav ul li:first-child {
     margin-left: 0;
 }
-p1{ text-align: center}
-p2{ text-align: center}
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 jikken{ 
-    text-align: center !important;
+    line-height:30px;
 }
 p2{ 
     text-align: center;
