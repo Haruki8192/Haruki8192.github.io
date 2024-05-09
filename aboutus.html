@@ -17,17 +17,36 @@
 </ul>
 </nav>
 </header>
-    <table border="1">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 400px; /* 表の幅 */
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px; /* セルの余白 */
+        }
+
+        th {
+            width: 150px; /* 列の幅 */
+        }
+    </style>
+    <table>
         <tr>
-            <td>名称</td>
-            <td>創業年月</td>
-            <td>社長名</td>
-            <td>会社概要</td>
+            <th>名称</th>
+            <td>田中会社</td>
         </tr>
         <tr>
-            <td>田中会社</td>
+            <th>創業年月</th>
             <td>2022年2月22日</td>
+        </tr>
+        <tr>
+            <th>社長名</th>
             <td>田中太郎</td>
+        </tr>
+        <tr>
+            <th>会社概要</th>
             <td>ケーキを販売しています。</td>
         </tr>
     </table>
