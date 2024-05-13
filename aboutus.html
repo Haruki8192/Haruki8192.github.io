@@ -47,7 +47,20 @@
     color: #fff;
     text-decoration: none;
   }
-     
+     table {
+    width: 80%; /* 表の幅を設定 */
+    margin: 0 auto; /* 左右の余白を自動調整 */
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px; /* セルの内側の余白を設定 */
+    border: 1px solid #ddd; /* セルのボーダーを設定 */
+  }
+
+  th {
+    background-color: #f2f2f2; /* ヘッダー行の背景色を設定 */
+  }
 </style>
 </head>
 <body>
@@ -62,5 +75,28 @@
     <li><a href="contact.html">連絡はこちらから</a></li>
   </ul>
 </header>
+    <h2 style="text-align:center;">会社情報</h2>
+<table>
+  <tr>
+    <th>名称</th>
+    <td>トマト株式会社</td>
+  </tr>
+  <tr>
+    <th>創業年月</th>
+    <td>2024年</td>
+  </tr>
+  <tr>
+    <th>社長名</th>
+    <td>田中太郎</td>
+  </tr>
+  <tr>
+    <th>会社概要</th>
+    <td>コンサル会社</td>
+  </tr>
+  <tr>
+    <th>連携先</th>
+    <td>トマト大学</td>
+  </tr>
+</table>
 </body>
 </html>
