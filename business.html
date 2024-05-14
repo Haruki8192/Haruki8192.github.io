@@ -47,25 +47,26 @@
     color: #fff;
     text-decoration: none;
   }
-     .business-section {
+     .container {
             display: flex;
-            align-items: center;
-            margin-bottom: 40px;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 100vh;
         }
-        .business-section img {
+        .section {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .section img {
             max-width: 100%;
             height: auto;
-            margin-right: 20px;
+            vertical-align: middle;
         }
-        .business-section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-        .business-section:nth-child(even) img {
-            margin-right: 0;
-            margin-left: 20px;
-        }
-        h2 {
-            color: #333;
+        .description {
+            margin-top: 10px;
+            font-size: 1.2em;
         }
 </style>
 </head>
@@ -81,29 +82,28 @@
     <li><a href="contact.html">連絡はこちらから</a></li>
   </ul>
 </header>
-    <h1>会社の主なビジネス内容</h1>
-
-    <div class="business-section">
-        <img src="path/to/cake-image.jpg" alt="ケーキ作り">
-        <div>
-            <h2>ケーキ作り</h2>
-            <p>当社は、最高品質の材料を使用し、美味しいケーキを作ることに専念しています。お客様のニーズに合わせた多様なデザインとフレーバーのケーキをご提供します。</p>
+<h1 style="text-align:center; margin-top:20px;">会社の主なビジネス内容</h1>
+    <div class="container">
+        <div class="section">
+            <img src="path/to/cake-image.jpg" alt="ケーキ作り">
+            <div class="description">
+                <h2>ケーキ作り</h2>
+                <p>当社は、最高品質の材料を使用し、美味しいケーキを作ることに専念しています。お客様のニーズに合わせた多様なデザインとフレーバーのケーキをご提供します。</p>
+            </div>
         </div>
-    </div>
-
-    <div class="business-section">
-        <img src="path/to/bread-image.jpg" alt="パン作り">
-        <div>
-            <h2>パン作り</h2>
-            <p>パン作りの伝統を守りつつ、新しい技術を取り入れて、常にお客様に新鮮で美味しいパンを提供しています。毎日焼きたてのパンをお楽しみいただけます。</p>
+        <div class="section">
+            <img src="path/to/bread-image.jpg" alt="パン作り">
+            <div class="description">
+                <h2>パン作り</h2>
+                <p>パン作りの伝統を守りつつ、新しい技術を取り入れて、常にお客様に新鮮で美味しいパンを提供しています。毎日焼きたてのパンをお楽しみいただけます。</p>
+            </div>
         </div>
-    </div>
-
-    <div class="business-section">
-        <img src="path/to/health-image.jpg" alt="健康事業">
-        <div>
-            <h2>健康事業</h2>
-            <p>健康的な生活をサポートするための製品とサービスを提供しています。栄養豊富な食品や健康サプリメント、フィットネスプログラムなど、多岐にわたる健康ソリューションをご用意しています。</p>
+        <div class="section">
+            <img src="path/to/health-image.jpg" alt="健康事業">
+            <div class="description">
+                <h2>健康事業</h2>
+                <p>健康的な生活をサポートするための製品とサービスを提供しています。栄養豊富な食品や健康サプリメント、フィットネスプログラムなど、多岐にわたる健康ソリューションをご用意しています。</p>
+            </div>
         </div>
     </div>
 </body>
