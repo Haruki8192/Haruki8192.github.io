@@ -48,55 +48,25 @@
     text-decoration: none;
   }
 
-form {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-  }
-
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="tel"],
-  form textarea {
-    width: calc(100% - 20px); /* ボーダーの幅を含めた幅にする */
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box; /* ボックスモデルを維持するために追加 */
-    border: 1px solid #ccc; /* ボーダー追加 */
-    border-radius: 4px; /* 角丸 */
-  }
-
-  form textarea {
-    height: 100px;
-  }
-
-  form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  form input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-
-  /* 追加 */
-  .gender-label {
-    display: inline-block;
-    text-align: left;
-    margin-right: 20px;
-  }
-        .h2 {
-            text-align:center;
+.container {
+            width: 90%;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-wrapper {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh; /* フォームの高さを調整 */
+            border: none;
         }
 </style>
 </head>
@@ -112,23 +82,13 @@ form {
     <li><a href="contact.html">連絡はこちらから</a></li>
   </ul>
 </header>　
-    <h2 style="text-align:center;">お問い合わせ先</h2>
-<form action="mailto:xx@example.com" method="post" enctype="text/plain">
-  <label for="name">名前:</label>
-  <input type="text" id="name" name="name"><br><br>
-  <label>性別:</label>
-  <label class="gender-label" for="male">男性</label>
-  <input type="radio" id="male" name="gender" value="male">
-  <label class="gender-label" for="female">女性</label>
-  <input type="radio" id="female" name="gender" value="female"><br><br>
-  <label for="email">メールアドレス:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <label for="phone">電話番号:</label>
-  <input type="tel" id="phone" name="phone"><br><br>
-  <label for="message">お問い合わせ内容:</label><br>
-  <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-  <input type="submit" value="送信">
-</form>
+    <div class="container">
+        <h1>お問い合わせ</h1>
+        <div class="form-wrapper">
+            <https://docs.google.com/forms/d/e/1FAIpQLSdpXEXvp8UCp3LSsH9p6ZovI3sIC0FzcOP-nmKZSdeUwvyZ7Q/viewform?usp=sf_link>
+            <iframe src="YOUR_GOOGLE_FORM_EMBED_URL" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
+    </div>
 
 </body>
 </html>
